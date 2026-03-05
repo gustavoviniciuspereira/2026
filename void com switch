@@ -1,0 +1,53 @@
+
+#include <stdio.h>
+
+void soma (int a,int b){
+    int result = a+b;
+    
+    printf("total:%d", result);
+    
+}
+void subtracao(int a,int b) {
+    int result = a-b;
+    
+    printf("total:%d", result);
+}
+void multiplicacao (int a,int b){
+    int result = a*b;
+    
+    printf("total:%d", result);
+}
+void divicao (int a,int b){
+    int result = a/b;
+    
+    printf("total:%d", result);
+    
+}
+int main()
+{
+    int opcao;
+    int v1,v2;
+    printf("escolha uma opcao\n 1 - soma\n 2 - subtracao\n 3 - mltiplicacao\n 4 - divisao\n escolha");
+    scanf("%d",&opcao);
+    
+     scanf("%d %d",&v1,&v2);
+    switch(opcao){
+    
+    case 1 :
+    soma(v1,v2);
+    break;
+    
+    case 2 :
+    subtracao(v1,v2);
+    break;
+    
+    case 3 :
+    break;
+    multiplicacao(v1,v2);
+    
+    case 4 :
+    break;
+    divicao(v1,v2);
+    
+}
+}
